@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pacient`
+-- Database: `Paciente`
 --
 
 -- --------------------------------------------------------
@@ -46,35 +46,3 @@ CREATE TABLE `paciente` (
   `email` varchar(75) NOT NULL,
   `assunto` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `paciente`
---
-
-INSERT INTO `paciente` (`id`, `nome`, `mae`, `nasc`, `sexo`, `cpf`, `rg`, `titulo`, `sus`, `rua`, `quadra`, `numero`, `bairro`, `cep`, `telefone`, `celular`, `email`, `assunto`) VALUES
-(13, 'Wander Pereira', 'Rosangela Maria Pereira', '2017-04-17', '', '23423', '345938475', '3457', '9876', '876876', '876876', '87687', '867876', '867786', '876876', '876876', '867786', '876788'),
-(940, 'Kuiui', '', '2017-02-08', 'Masculino', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(941, 'JosÃ© Manuel', 'Elena', '2017-04-06', 'Masculino', '90898', '809098', '9090890', '980909', '09808', '98098', '098', '908', '90908908', '09', '8098', '08098', '098098');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `paciente`
---
-ALTER TABLE `paciente`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `paciente`
---
-ALTER TABLE `paciente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=942;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
